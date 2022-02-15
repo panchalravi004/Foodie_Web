@@ -1,0 +1,65 @@
+.category .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 14rem;
+    height: 20rem;
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+    background-color: grey;
+    margin: 1rem 3rem;
+    border-radius: 20px;
+    transition: 0.2s;
+    opacity: 0.9;
+    overflow: hidden;
+    /* box-sizing: border-box; */
+    /* background-position: center; */
+    background-size: cover;
+    box-shadow: 0rem 0rem 1rem rgba(0,0,0,0.4);
+}
+.category .card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    background-color: orange;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.4s;
+}
+.category .card:hover::before{
+    height: 20%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+.category .card:hover{
+    opacity: 1;
+    transform: translateY(-1rem);
+}
+.category .card h2{
+    position: relative;
+    bottom: 0rem;
+}
+.category .card:nth-child(1){
+    background-image: url('https://i.ibb.co/TKzvySt/Pizza.jpg');
+}
+.category .card:nth-child(2){
+    background-image: url('https://i.ibb.co/TMyHsFR/Beef-Burger-Patty-2-Ways-1-B.jpg');
+}
+.category .card:nth-child(3){
+    background-image: url('https://i.ibb.co/bgQS2Jd/Creamy-Tomato-Basil-Pasta-Instant-Pot.jpg');
+}
+.category .card:nth-child(4){
+    background-image: url(https://i.ibb.co/ZxZyMhv/colddrink.jpg);
+}
+@media only screen and (max-width:600px){
+    .category .card{
+        margin: 1rem 1rem;
+    }
+}
+

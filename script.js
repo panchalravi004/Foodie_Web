@@ -16,5 +16,6 @@ $(document).ready(
         $("#footer").load("footer/footer.html");
         $("#offer-container").load("offers/offer.html");
         $("#product").load("products/product.html");
+        $("#category").load("category/category.html");
     }
 );

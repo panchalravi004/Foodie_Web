@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="footer/style.css">
     <link rel="stylesheet" href="offers/style.css">
     <link rel="stylesheet" href="products/style.css">
+    <link rel="stylesheet" href="category/style.css">
 
     <script src="script.js"></script>
     <script src="script/anime.js"></script>
@@ -75,6 +76,19 @@
             transition: 0.6s;
         }
 
+        .category {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+            margin: 3rem 0;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.06);
+        }
+
         .product {
             position: relative;
             width: 100%;
@@ -83,6 +97,8 @@
             display: inline-block;
             align-items: center;
             background-color: white;
+            border-radius: 2rem;
+            box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.06);
         }
 
         .product::before {
@@ -124,6 +140,10 @@
 <body>
     <!-- First offers Container -->
     <div class="offer" id="offer-container"></div>
+
+    <!--Major Category Approach -->
+    <div class="category" id="category"></div>
+
     <!-- Products View -->
     <div class="product" id="product"></div>
 
@@ -132,37 +152,3 @@
 <footer class="footer" id="footer"></footer>
 
 </html>
-<!-- <script>
-    fetch('products/data.json')
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            appenddata(data);
-        })
-        .catch(function (err) {
-                console.log('error: ' + err);
-        });
-    function appenddata(data) {
-        var a = document.getElementById("product");
-        // for (var i = 0; i < data.length; i++) {
-        //     var b = document.createElement("div");
-        //     b.innerHTML = 'id : ' + data[i].id + ' ' + data[i].name;
-        //     a.appendChild(b);
-        // }
-        for(var key in data){
-            var c = document.createElement("div");
-            for (var i = 0; i < data[key].length; i++) {
-                var b = document.createElement("div");
-                b.innerHTML = data[key][i].id +' '+key;
-                // c.innerHTML = 
-                // '<div>'+data[key][i].id+'</div>'
-                // ;
-                c.appendChild(b);
-                // var b = document.createElement("div");
-                // b.innerHTML = 'id : ' + data[key][i].id + ' ' + data[key][i].name;
-            }
-            a.appendChild(c);
-        }
-    }
-</script> -->
