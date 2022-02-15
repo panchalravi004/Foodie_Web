@@ -7,7 +7,7 @@
             "mrp": "700",
             "price": "300",
             "off": "40%",
-            "img":"https://i.ibb.co/S0fqBzb/Screenshot-2022-02-14-142122.png"
+            "img": "https://i.ibb.co/S0fqBzb/Screenshot-2022-02-14-142122.png"
         },
         {
             "id": "2",
@@ -16,7 +16,7 @@
             "mrp": "1200",
             "price": "900",
             "off": "40%",
-            "img":"https://i.ibb.co/WWGzx8m/Screenshot-2022-02-14-142449.png"
+            "img": "https://i.ibb.co/WWGzx8m/Screenshot-2022-02-14-142449.png"
         },
         {
             "id": "3",
@@ -25,7 +25,7 @@
             "mrp": "600",
             "price": "480",
             "off": "20%",
-            "img":"https://i.ibb.co/bdnCn2C/Screenshot-2022-02-14-171052.png"
+            "img": "https://i.ibb.co/bdnCn2C/Screenshot-2022-02-14-171052.png"
         },
         {
             "id": "4",
@@ -34,7 +34,7 @@
             "mrp": "500",
             "price": "400",
             "off": "10%",
-            "img":"https://i.ibb.co/bmnypJQ/Screenshot-2022-02-14-171052.png"
+            "img": "https://i.ibb.co/bmnypJQ/Screenshot-2022-02-14-171052.png"
         },
         {
             "id": "5",
@@ -43,7 +43,7 @@
             "mrp": "700",
             "price": "560",
             "off": "20%",
-            "img":"https://i.ibb.co/jDkqfsb/Screenshot-2022-02-14-171740.png"
+            "img": "https://i.ibb.co/jDkqfsb/Screenshot-2022-02-14-171740.png"
         },
         {
             "id": "6",
@@ -52,28 +52,63 @@
             "mrp": "800",
             "price": "700",
             "off": "20%",
-            "img":"https://i.ibb.co/vw6T8GR/Screenshot-2022-02-14-171740.png"
+            "img": "https://i.ibb.co/vw6T8GR/Screenshot-2022-02-14-171740.png"
         }
-        
     ],
     "What's New": [
         {
             "id": "1",
-            "name": "Swad-E-Punjab",
-            "desc": "North Indian Punjabi Thalis",
-            "mrp": "700",
-            "price": "300",
-            "off": "40%",
-            "img":"https://i.ibb.co/S0fqBzb/Screenshot-2022-02-14-142122.png"
+            "name": "Malt Pizza",
+            "desc": "Pizzas",
+            "mrp": "500",
+            "price": "250",
+            "off": "50%",
+            "img": "https://i.ibb.co/FxY6cJ3/malt-pizza.png"
         },
         {
             "id": "2",
-            "name": "Fozzie's Pizzaiolo",
-            "desc": "Salads, Italian, Mexican",
+            "name": "Ministry of Momos",
+            "desc": "Chinese Momos",
+            "mrp": "250",
+            "price": "200",
+            "off": "20%",
+            "img": "https://i.ibb.co/t3DbpmL/malt-pizza.png"
+        },
+        {
+            "id": "3",
+            "name": "Dhaba Amritsari",
+            "desc": "Punjabi North Insian Indian",
+            "mrp": "250",
+            "price": "200",
+            "off": "20%",
+            "img": "https://i.ibb.co/R3hgw0Q/2.png"
+        },
+        {
+            "id": "4",
+            "name": "Soup Fiesta",
+            "desc": "Chienese Soup",
+            "mrp": "150",
+            "price": "120",
+            "off": "20%",
+            "img": "https://i.ibb.co/0cXd7sP/3.png"
+        },
+        {
+            "id": "5",
+            "name": "Parathe Sharathe",
+            "desc": "Indian North Indian",
+            "mrp": "350",
+            "price": "280",
+            "off": "20%",
+            "img": "https://i.ibb.co/5xT9k1R/4.png"
+        },
+        {
+            "id": "6",
+            "name": "M.A.D. by Tomato's",
+            "desc": "Indian Chinese Continental",
             "mrp": "1200",
-            "price": "900",
-            "off": "40%",
-            "img":"https://i.ibb.co/WWGzx8m/Screenshot-2022-02-14-142449.png"
+            "price": "960",
+            "off": "20%",
+            "img": "https://i.ibb.co/nr5SGHL/5.png"
         }
     ]
 }

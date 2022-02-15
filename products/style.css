@@ -72,8 +72,9 @@
     text-overflow: ellipsis;
 }
 .product div span table tr th img{
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-radius: 15px;
+    /* border-top-right-radius: 15px;
+    border-top-left-radius: 15px; */
     width: 100%;
 }
 @media only screen and (max-width:600px) {
