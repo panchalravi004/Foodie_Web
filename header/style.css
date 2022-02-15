@@ -1,0 +1,176 @@
+
+html{
+    font-size: 62.5%;
+}
+.header .head-title{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10%;
+    top: 0;
+    width: 15rem;
+    height: 6rem;
+    background-color: transparent;
+}
+.header .head-title i{
+    position: absolute;
+    left: 0rem;
+    color: rgb(255, 145, 0);
+    font-size: 3.5rem;
+    transition: 0.2s;
+}
+
+.header .head-title .title{
+    position: absolute;
+    right: 0rem;
+    margin: 0.5rem;
+    font-size: 3.0rem;
+    transition: 0.2s;
+}
+.header .head-title:hover .title{
+    color: rgb(255, 145, 0);
+    font-weight: 600;
+    transform: scale(1.2);
+    text-shadow: 1.0rem .0rem .5rem rgba(0,0,0, 0.05);
+}
+.header .head-title:hover i{
+    transform: scale(1.2) rotateZ(-40deg);
+}
+/*search input and button*/
+.header .search-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24.0rem;
+    height: 3.0rem;
+    background-color: transparent;
+    border-radius: 2.5rem;
+    box-shadow: .0rem .0rem .5rem rgba(0,0,0, 0.08);
+    transition: 0.2s;
+}
+.header .search-box:hover{
+    transform: scale(1.05);
+}
+.header .search-box .search-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 80%;
+    text-align: center;
+    background-color: white;
+    outline: none;
+    border: 0;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+}
+.header .search-box .search-bt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 4.8rem;
+    background-color: yellow;
+    border: 0;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    transition: 0.2s;
+}
+.header .search-box .search-bt:active{
+    color: green;
+}
+.header .menu{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1.5rem;
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+}
+.header .menu span{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 1.0rem;
+    padding:0 1rem;
+    height: 4rem;
+    background-color: transparent;
+    border-radius: .8rem;
+    transition: 0.1s;
+}
+.header .menu span:hover{
+    background-color: rgba(0,0,0, 0.05);
+    font-size: 1.7rem;
+}
+/*For Responsive*/
+.header .rs-500{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    top: 1.2rem;
+    right: 18%;
+    background-color: transparent;
+    border-radius: 3.5rem;
+}
+
+.header .bar{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    top: 1.2rem;
+    right: 8%;
+    background-color: transparent;
+    border-radius: 3.5rem;
+    right: 8%;
+    transition: 0.2s;
+}
+
+/*Make Responsive for 600px width*/
+@media only screen and (max-width: 600px){
+    .header.active{
+        height: 32.0rem;
+    }
+    .header .rs-500{
+        display: flex;
+    }
+    .header .search-box{
+        display: none;
+        bottom: -3.0rem;
+    }
+    .header .search-box.active{
+        display: flex;
+    }
+    .header .rs-500:hover{
+        background-color: rgba(0,0,0, 0.05);
+    }
+    
+/*MENU BAR*/
+    .header .menu{
+        display: none;
+        bottom: 0;
+        margin: 0 10rem;
+        width: 50%;
+        height: 80%;
+    }
+    .header.active .menu{
+        display: block;
+    }
+    .header .bar{
+        display: flex;
+    }
+    .header .bar:hover{
+        background-color: rgba(0,0,0, 0.05);
+    }
+}

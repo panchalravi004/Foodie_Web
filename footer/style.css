@@ -1,0 +1,227 @@
+
+html{
+    font-size: 62.5%;
+}
+.footer .sec-1,.sec-2,.sec-3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28.0rem;
+    height: 85%;
+    background-color:  rgb(19, 33, 65);
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    border-radius: 1.0rem;
+}
+.footer .sec-1 .com-name{
+    position: absolute;
+    top: .0rem;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+}
+.footer .sec-1 .line{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 3.5rem;
+    width: 70%;
+    height: 3.5rem;
+    background-color: transparent;
+}
+.footer .sec-1 .line1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 7.5rem;
+    width: 70%;
+    height: 3.5rem;
+    background-color: transparent;
+}
+.footer .sec-1 .line2{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 11.5rem;
+    width: 70%;
+    height: 3.5rem;
+    background-color: transparent;
+}
+.footer .sec-1 #bt-menu h5{
+    margin: 1.0rem;
+    color: rgb(61, 80, 122);
+    transition: 0.1s;
+}
+.footer .sec-1 #bt-menu h5:hover{
+    color: white;
+    transform: scale(1.08);
+}
+
+.footer .sec-2 .sign-bt{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 3.0rem;
+    top: 1.0rem;
+    background-color: transparent;
+    color: white;
+    letter-spacing: .3rem;
+    border-radius: 3.5rem;
+    transition: 0.1s;
+}
+.footer .sec-2 .sign-bt:hover{
+    background-color: rgb(17, 29, 58);
+    transition-delay: 0.1s;
+    width: 60%;
+}
+.footer .sec-2 .com-logo{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 4.0rem;
+    background-color: transparent;
+    color: rgb(168, 168, 168);
+}
+.footer .sec-2 .com-logo img{
+    border-radius: 4.5rem;
+    transition: 0.2s;
+}
+.footer .sec-2 .com-logo img:hover{
+    transform: scale(1.2);
+}
+.footer .sec-2 .copy{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 3.5rem;
+    bottom: .5rem;
+    background-color: transparent;
+    color: white;
+}
+.footer .sec-3 .search{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 2.5rem;
+    top: .5rem;
+    background-color: white;
+    border-radius: 2.4rem;
+}
+.footer .sec-3 .search input{
+    position: absolute;
+    left: 0;
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    outline: none;
+    border: 0;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+}
+.footer .sec-3 .search .search-bt{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    height: 100%;
+    width: 18%;
+    background-color: yellow;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    transition: 0.2s;
+}
+.footer .sec-3 .search .search-bt:hover{
+    background-color: green;
+    color: white;
+}
+.footer .sec-3 .small-menu{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3.5rem;
+    top: 3.5rem;
+    background-color:transparent;
+    color: white;
+}
+.footer .sec-3 .small-menu h5{
+    margin: 1.0rem;
+    letter-spacing: .2rem;
+    transition: 0.1s;
+}
+.footer .sec-3 .small-menu h5:hover{
+    transform: scale(1.1);
+}
+.footer .sec-3 .social{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 3.5rem;
+    top: 7.5rem;
+    background-color: transparent;
+}
+.footer .sec-3 .social span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.0rem;
+    height: 3.0rem;
+    margin: 1.0rem;
+    background-color: white;
+    border-radius: 3.0rem;
+    transition: 0.1s;
+}
+.footer .sec-3 .social span:hover{
+    transform: scale(1.2);
+}
+.footer .sec-3 .term{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 2.5rem;
+    bottom: .5rem;
+    background-color: transparent;
+    color: white;
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 600px){
+    html{
+        font-size: 50%;
+    }
+    .footer{
+        height: 50.0rem;
+    }
+    .footer .sec-1,.sec-2,.sec-3{
+        position: absolute;
+        height: 35%;
+        transform: scale(0.85) scaleX(1);
+    }
+    .footer .sec-1{
+        top: 0;   
+    }
+    .footer .sec-2{
+        top: 32%;   
+    }
+    .footer .sec-3{
+        top: 64%;   
+    }
+}

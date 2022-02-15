@@ -1,0 +1,93 @@
+.product div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 1rem 13rem;
+    background-color: white;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 2rem rgba(0,0,0,0.07);
+}
+.product div .title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    margin: 1rem 0rem;
+    background-color: transparent;
+    font-size: 2.5rem;
+    z-index: 1;
+}
+.product div .title .t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+    color: white;
+    background-color: orange;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.product div span{
+    position: inherit;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 5rem;
+    overflow: hidden;
+    width: 22rem;
+    /* height: 28rem; */
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 1rem rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+.product div span h2{
+    font-size: 1.8rem;
+}
+.product div span h3{
+    font-size: 1.3rem;
+}
+.product div span:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 1rem rgba(0,0,0,0.3);
+}
+.product div span table{
+    position: relative;
+    table-layout: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.product div span table td{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.product div span table tr th img{
+    transform: scale(1.02);
+    width: 100%;
+}
+@media only screen and (max-width:600px) {
+    .product div span h2{
+        font-size: 1.2rem;
+    }
+    .product div span h3{
+        font-size: 1rem;
+    }
+    .product div{
+        margin: 1rem 0rem;
+        width: 95%;
+    }
+    .product div span{
+        width: 16rem;
+        height: 23rem;
+        margin: 1rem 1rem;
+    }
+}

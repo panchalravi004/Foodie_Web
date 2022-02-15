@@ -1,0 +1,86 @@
+
+<!-- <div class="main">
+    <h5>Top Picks</h5>
+    <span class="pro">
+        <table border="0">
+            <tr>
+                <th colspan="3"><img src="https://i.ibb.co/S0fqBzb/Screenshot-2022-02-14-142122.png"></th>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h2>Swad-E-Punjab</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4>North Indian Punjabi Thalis</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>mrp 700 Rs.</h4>
+                </td>
+                <td>
+                    <h3>40% off</h3>
+                </td>
+                <td>
+                    <h3>350 Rs.</h3>
+                </td>
+            </tr>
+        </table>
+    </span>
+</div> -->
+
+<script>
+    fetch('products/data.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appenddata(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+    function appenddata(data) {
+        var a = document.getElementById("product");
+
+        for (var key in data) {
+            var main = document.createElement("div");
+            main.innerHTML = '<d class="title"><d class="t"><h5>' + key + '</h5></d><d></br>';
+            for (var i = 0; i < data[key].length; i++) {
+                var pro = document.createElement("span");
+                pro.innerHTML =
+                    '<table>' +
+                    ' <tr>' +
+                    '<th colspan="2">' + '<img src=' + data[key][i].img + '>' + '</th>' +
+                    '</tr>' +
+                    ' <tr>' +
+                    '<td>' +
+                    '<h2>' + data[key][i].name + '</h2>' +
+                    '</td>' +
+                    '<td>' +
+                    '<h3>' + data[key][i].off + 'off</h3>' +
+                    '</td>' +
+                    '</tr>' +
+                    ' <tr>' +
+                    '<td colspan="2">' +
+                    '<h3>' + data[key][i].desc + '</h3>' +
+                    '</td>' +
+                    '</tr>' +
+                    ' <tr>' +
+                    '<td>' +
+                    '<h3>mrp ' + data[key][i].mrp + ' Rs.</h3>' +
+                    '</td>' +
+                    '<td>' +
+                    '<h2>' + data[key][i].price + ' Rs.</h2>' +
+                    '</td>' +
+                    '</tr>' +
+                    '</table>'
+                    ;
+                main.appendChild(pro);
+            }
+            a.appendChild(main);
+        }
+    }
+</script>

@@ -1,0 +1,79 @@
+{
+    "Top Picks": [
+        {
+            "id": "1",
+            "name": "Swad-E-Punjab",
+            "desc": "North Indian Punjabi Thalis",
+            "mrp": "700",
+            "price": "300",
+            "off": "40%",
+            "img":"https://i.ibb.co/S0fqBzb/Screenshot-2022-02-14-142122.png"
+        },
+        {
+            "id": "2",
+            "name": "Fozzie's Pizzaiolo",
+            "desc": "Salads, Italian, Mexican",
+            "mrp": "1200",
+            "price": "900",
+            "off": "40%",
+            "img":"https://i.ibb.co/WWGzx8m/Screenshot-2022-02-14-142449.png"
+        },
+        {
+            "id": "3",
+            "name": "McDonald's",
+            "desc": "American",
+            "mrp": "600",
+            "price": "480",
+            "off": "20%",
+            "img":"https://i.ibb.co/bdnCn2C/Screenshot-2022-02-14-171052.png"
+        },
+        {
+            "id": "4",
+            "name": "Firangi Bake",
+            "desc": "Italian, Mexican Pasta",
+            "mrp": "500",
+            "price": "400",
+            "off": "10%",
+            "img":"https://i.ibb.co/bmnypJQ/Screenshot-2022-02-14-171052.png"
+        },
+        {
+            "id": "5",
+            "name": "McDonald's Gourmet Burger Collection",
+            "desc": "American Fast Food Desert Beverages",
+            "mrp": "700",
+            "price": "560",
+            "off": "20%",
+            "img":"https://i.ibb.co/jDkqfsb/Screenshot-2022-02-14-171740.png"
+        },
+        {
+            "id": "6",
+            "name": "LunchBox",
+            "desc": "North Indian Punjabi Combo Biryani",
+            "mrp": "800",
+            "price": "700",
+            "off": "20%",
+            "img":"https://i.ibb.co/vw6T8GR/Screenshot-2022-02-14-171740.png"
+        }
+        
+    ],
+    "What's New": [
+        {
+            "id": "1",
+            "name": "Swad-E-Punjab",
+            "desc": "North Indian Punjabi Thalis",
+            "mrp": "700",
+            "price": "300",
+            "off": "40%",
+            "img":"https://i.ibb.co/S0fqBzb/Screenshot-2022-02-14-142122.png"
+        },
+        {
+            "id": "2",
+            "name": "Fozzie's Pizzaiolo",
+            "desc": "Salads, Italian, Mexican",
+            "mrp": "1200",
+            "price": "900",
+            "off": "40%",
+            "img":"https://i.ibb.co/WWGzx8m/Screenshot-2022-02-14-142449.png"
+        }
+    ]
+}

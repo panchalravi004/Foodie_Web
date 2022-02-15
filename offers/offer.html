@@ -1,0 +1,64 @@
+<div class="bg-img">
+    <img src="https://i.ibb.co/f0vyN2T/Pizza-Background-Wallpaper-61694.jpg">
+</div>
+<div class="content">
+    <span class="left-bt" id="left-bt">
+        <i class="fas fa-chevron-left"></i>
+    </span>
+    <div class="offer-box" id="offer-box">
+        <div class="off">
+            <img src="https://i.ibb.co/PMY53LR/Screenshot-2022-02-13-192048.png">
+        </div>
+        <div class="off">
+            <img src="https://i.ibb.co/9wkF7B9/Screenshot-2022-02-13-191959.png">
+        </div>
+        <div class="off">
+            <img src="https://i.ibb.co/s9v78Kg/Screenshot-2022-02-13-191924.png">
+        </div>
+        <div class="off">
+            <img src="https://i.ibb.co/VSJpF2P/Screenshot-2022-02-13-191843.png">
+        </div>
+        <div class="off">
+            <img src="https://i.ibb.co/F41Z8Dp/Screenshot-2022-02-13-191807.png">
+        </div>
+        <div class="off">
+            <img src="https://i.ibb.co/JrJ5mKx/Screenshot-2022-02-13-191715.png">
+        </div>
+    </div>
+    <span class="right-bt" id="right-bt">
+        <i class="fas fa-chevron-right"></i>
+    </span>
+</div>
+<script>
+    $(document).ready(function () {
+        // $("#right-bt").click(function () {
+        //     // alert($("div").scrollLeft() + " px");
+        //     $("#offer-box").scrollLeft($("#offer-box").scrollLeft() + 150);
+        // })
+
+        if ($(window).width() < 600) {
+            $("#right-bt").click(function () {
+                $("#offer-box").animate({
+                    scrollLeft: $("#offer-box").scrollLeft() + 240 + "px"
+                }, 1000)
+            })
+            $("#left-bt").click(function () {
+                $("#offer-box").animate({
+                    scrollLeft: $("#offer-box").scrollLeft() - 240 + "px"
+                }, 1000)
+            })
+        }
+        else{
+            $("#right-bt").click(function () {
+                $("#offer-box").animate({
+                    scrollLeft: $("#offer-box").scrollLeft() + 500 + "px"
+                }, 1000)
+            })
+            $("#left-bt").click(function () {
+                $("#offer-box").animate({
+                    scrollLeft: $("#offer-box").scrollLeft() - 500 + "px"
+                }, 1000)
+            })
+        }
+    });
+</script>
