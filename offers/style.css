@@ -43,7 +43,7 @@ html{
     transition: 0.1s;
 }
 .offer .content .left-bt:hover ,.right-bt:hover{
-    background-color: rgba(179, 179, 179, 0.973);
+    background-color: rgba(255, 146, 4, 0.973);
     color: white;
 }
 .offer .content .left-bt:hover i{
