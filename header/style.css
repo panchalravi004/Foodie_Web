@@ -103,6 +103,7 @@ html{
     background-color: transparent;
     border-radius: .8rem;
     transition: 0.1s;
+    cursor: pointer;
 }
 .header .menu span:hover{
     background-color: rgba(0,0,0, 0.05);

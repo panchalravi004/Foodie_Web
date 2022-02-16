@@ -1,0 +1,57 @@
+<div class="close" onclick="close_signin()">
+    <i class="fa fa-times"></i>
+</div>
+<div class="main">
+    <div class="title">
+        <h1> <i class="fas fa-seedling"></i> FooDie</h1>
+    </div>
+    <div class="select">
+        <div class="signin" id="signin" onclick="signin()">SignIn</div>
+        <div class="signup" id="signup" onclick="signup()">SignUp</div>
+    </div>
+    <div class="content">
+        <div class="signin-ct" id="signin-ct">
+            <input type="text" placeholder="mobile">
+            <input type="password" placeholder="password">
+            <input type="submit" value="Sigin">
+        </div>
+        <div class="signup-ct" id="signup-ct">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Mobile">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="number" placeholder="Pincode">
+            <input type="submit" value="Sigup">
+        </div>
+    </div>
+</div>
+<script>
+    function signin() {
+        var a = document.getElementById("signin");
+        var b = document.getElementById("signup");
+
+        var a_ct = document.getElementById("signin-ct");
+        var b_ct = document.getElementById("signup-ct");
+        
+        a.style.background = "rgb(255, 81, 0)";
+        a.style.color = "white";
+        a_ct.style.display = "flex";
+        b.style.background = "transparent";
+        b.style.color = "black";
+        b_ct.style.display = "none";
+    }
+    function signup() {
+        var a = document.getElementById("signup");
+        var b = document.getElementById("signin");
+
+        var a_ct = document.getElementById("signup-ct");
+        var b_ct = document.getElementById("signin-ct");
+
+        a.style.background = "rgb(255, 81, 0)";
+        a.style.color = "white";
+        a_ct.style.display = "flex";
+        b.style.background = "transparent";
+        b.style.color = "black";
+        b_ct.style.display = "none";
+    }
+</script>
