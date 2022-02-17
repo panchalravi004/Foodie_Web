@@ -37,5 +37,6 @@ $(document).ready(
         $("#product").load("products/product.html");
         $("#category").load("category/category.html");
         $("#sign-in").load("signin/signin.html");
+        $("#support-sec").load("support/support.html");
     }
 );

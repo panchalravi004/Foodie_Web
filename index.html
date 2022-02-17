@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="products/style.css">
     <link rel="stylesheet" href="category/style.css">
     <link rel="stylesheet" href="signin/style.css">
+    <link rel="stylesheet" href="support/style.css">
 
     <script src="script/script.js"></script>
     <script src="script/anime.js"></script>
@@ -133,6 +134,31 @@
             box-shadow: inset 0rem 0rem 40rem rgba(0, 0, 0, 1);
         }
 
+        .support-sec {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 2rem 0;
+            /* height: 50rem; */
+            background-color: rgb(255, 232, 202);
+            margin: 1rem 0;
+        }
+
+        .support-sec::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 40%;
+            bottom: 0;
+            border-top-left-radius: 150%;
+            border-top-right-radius: 250%;
+            background-color: greenyellow;
+            box-shadow: inset 0px -50px 5px white;
+            z-index: 0;
+        }
+
         .sign-in {
             position: fixed;
             display: none;
@@ -163,6 +189,10 @@
                     .footer {
                         height: 50rem;
                     }
+
+                    .support-sec {
+                        display: block;
+                    }
                 }
             }
         }
@@ -180,6 +210,9 @@
 
     <!-- Products View -->
     <div class="product" id="product"></div>
+
+    <!-- Support Section -->
+    <div class="support-sec" id="support-sec"></div>
 
     <!-- OUTER PAGE SIGN IN WITH FIXED POSITION -->
     <div class="sign-in" id="sign-in"></div>
