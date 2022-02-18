@@ -1,0 +1,110 @@
+    [
+        {
+            "id": "1",
+            "name": "Makhni Brother",
+            "desc": "Combo Punjabi Biryani Thalis North Indian",
+            "mrp": "600",
+            "price": "250",
+            "off": "60%",
+            "img": "https://i.ibb.co/DfTgFcg/1.png"
+        },
+        {
+            "id": "2",
+            "name": "Udupi Shree Darshni Restaurant",
+            "desc": "South Indian",
+            "mrp": "850",
+            "price": "650",
+            "off": "20%",
+            "img": "https://i.ibb.co/Nj9yVrg/2.png"
+        },
+        {
+            "id": "3",
+            "name": "Burger King",
+            "desc": "American Fast Food",
+            "mrp": "600",
+            "price": "480",
+            "off": "20%",
+            "img": "https://i.ibb.co/B63KTrS/3.png"
+        },
+        {
+            "id": "4",
+            "name": "Vittlebox",
+            "desc": "Punjabi Combo Mexican",
+            "mrp": "500",
+            "price": "400",
+            "off": "10%",
+            "img": "https://i.ibb.co/xYBYmJr/4.png"
+        },
+        {
+            "id": "5",
+            "name": "M.M. Parotha House",
+            "desc": "Indian Chinese",
+            "mrp": "700",
+            "price": "560",
+            "off": "20%",
+            "img": "https://i.ibb.co/84VqWxH/5.png"
+        },
+        {
+            "id": "6",
+            "name": "Taco Bell",
+            "desc": "Mexican",
+            "mrp": "800",
+            "price": "700",
+            "off": "20%",
+            "img": "https://i.ibb.co/RgcnBRd/6.png"
+        },
+        {
+            "id": "7",
+            "name": "The Westend Hotel",
+            "desc": "Indain Chinese",
+            "mrp": "700",
+            "price": "300",
+            "off": "40%",
+            "img": "https://i.ibb.co/xY7Lfds/7.png"
+        },
+        {
+            "id": "8",
+            "name": "The Bent Spoon",
+            "desc": "North Indian Chinese Punjabi",
+            "mrp": "1200",
+            "price": "900",
+            "off": "40%",
+            "img": "https://i.ibb.co/HLSbrRP/8.png"
+        },
+        {
+            "id": "9",
+            "name": "The Healthy Stove",
+            "desc": "North Indian Healthy Food",
+            "mrp": "600",
+            "price": "480",
+            "off": "20%",
+            "img": "https://i.ibb.co/pzF3G0m/9.png"
+        },
+        {
+            "id": "10",
+            "name": "New Bombay Biryani",
+            "desc": "Biryani",
+            "mrp": "500",
+            "price": "400",
+            "off": "10%",
+            "img": "https://i.ibb.co/2KSmhwx/10.png"
+        },
+        {
+            "id": "11",
+            "name": "Faaasos Wraps & Rolls",
+            "desc": "Combo Snacks Indian",
+            "mrp": "700",
+            "price": "560",
+            "off": "20%",
+            "img": "https://i.ibb.co/BThZdmn/11.png"
+        },
+        {
+            "id": "12",
+            "name": "Season 9",
+            "desc": "Indian Chinese Continental",
+            "mrp": "800",
+            "price": "700",
+            "off": "20%",
+            "img": "https://i.ibb.co/rcdYrqM/12.png"
+        }
+    ]

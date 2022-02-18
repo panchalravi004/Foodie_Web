@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="/header/style.css">
     <link rel="stylesheet" href="/footer/style.css">
+    <link rel="stylesheet" href="/signin/style.css">
+
     <style>
         @import url(//use.fontawesome.com/release/v5.7.2/css/all.css);
 
@@ -114,7 +116,17 @@
             font-weight: 600;
             color: black;
         }
-
+        .sign-in {
+            position: fixed;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1010;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
         @media only screen and (max-width: 1000px) {
             html {
                 font-size: 45%;
@@ -159,6 +171,8 @@
             <li>Terms of Use for FooDie ON-TIME / Assured</li>
         </ul>
     </div>
+    <!-- OUTER PAGE SIGN IN WITH FIXED POSITION -->
+    <div class="sign-in" id="sign-in"></div>
 </body>
 <!-- FOOTER PART -->
 <footer class="footer" id="footer"></footer>
@@ -169,6 +183,7 @@
         function () {
             $("#header").load("/header/header.html");
             $("#footer").load("/footer/footer.html");
+            $("#sign-in").load("/signin/signin.html");
         }
     );
 </script>
