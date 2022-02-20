@@ -48,6 +48,7 @@
             transition: 0.2s;
             z-index: 100;
         }
+
         .footer {
             position: relative;
             top: 100%;
@@ -62,6 +63,7 @@
             box-shadow: 0rem -0.5rem 1rem rgba(0, 0, 0, 0.2);
             z-index: 99;
         }
+
         .title-sec {
             position: relative;
             display: flex;
@@ -83,6 +85,73 @@
 
         .title-sec ul h3 {
             color: rgb(58, 106, 151);
+        }
+
+        .slide {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40rem;
+            margin: 1rem 0;
+            background-color: transparent;
+        }
+
+        .slide .slide-box {
+            position: absolute;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            width: 70%;
+            height: 60%;
+            overflow: hidden;
+            overflow-x: scroll;
+            background-color: transparent;
+        }
+
+        .slide .slide-box img {
+            width: 18rem;
+            border-radius: 2rem;
+        }
+
+        .slide .slide-box::-webkit-scrollbar {
+            display: none;
+        }
+
+        .slide .slide-box .content {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            /* width: 95%; */
+            height: 95%;
+            background-color: transparent;
+        }
+
+        .slide .slide-box .content .box {
+            display: flex;
+            justify-content: center;
+            width: 20rem;
+            height: 95%;
+            margin: 0 1.5rem;
+            background-color: white;
+            box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.06);
+            border-radius: 2rem;
+            transition: 0.2s;
+        }
+
+        .slide .slide-box .content .box:hover {
+            transform: scale(1.1);
+        }
+
+        .slide .slide-box .content .box ul {
+            display: block;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            padding: 0;
+            list-style: none;
+            font-size: 1.4rem;
         }
 
         .container {
@@ -127,9 +196,11 @@
             box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.1);
             transition: 0.2s;
         }
-        .container .offer-box span:hover{
+
+        .container .offer-box span:hover {
             transform: scale(1.05);
         }
+
         .container .offer-box span table {
             position: relative;
             table-layout: fixed;
@@ -148,6 +219,7 @@
             border-radius: 15px;
             width: 100%;
         }
+
         .sign-in {
             position: fixed;
             display: none;
@@ -159,6 +231,7 @@
             z-index: 1010;
             background-color: rgba(0, 0, 0, 0.8);
         }
+
         @media only screen and (max-width: 1000px) {
             html {
                 font-size: 45%;
@@ -177,9 +250,11 @@
                     .footer {
                         height: 50rem;
                     }
+
                     .title-sec ul {
                         font-size: 1.6rem;
                     }
+
                     .container .offer-box span {
                         width: 16rem;
                         margin: 1rem 1rem;
@@ -203,6 +278,50 @@
             </li>
         </ul>
     </div>
+    <!-- SLIDER FOR OFFERS -->
+    <div class="slide">
+        <div class="slide-box">
+            <div class="content" id="content">
+                <span class="box">
+                    <ul>
+                        <li><img src="https://i.ibb.co/PMY53LR/Screenshot-2022-02-13-192048.png" alt="pizza-slide-4" border="0"></li>
+                        <li>40% off</li>
+                    </ul>
+                </span>
+                <span class="box">
+                    <ul>
+                        <li><img src="https://i.ibb.co/9wkF7B9/Screenshot-2022-02-13-191959.png" alt="pizza-slide-3" border="0"></li>
+                        <li>50% off</li>
+                    </ul>
+                </span>
+                <span class="box" onclick="ch()">
+                    <ul>
+                        <li><img src="https://i.ibb.co/s9v78Kg/Screenshot-2022-02-13-191924.png" alt="pizza-slide-2" border="0"></li>
+                        <li>50% off</li>
+                    </ul>
+                </span>
+                <span class="box">
+                    <ul>
+                        <li><img src="https://i.ibb.co/VSJpF2P/Screenshot-2022-02-13-191843.png" alt="juice-2" border="0"></li>
+                        <li>20% off</li>
+                    </ul>
+                </span>
+                <span class="box">
+                    <ul>
+                        <li><img src="https://i.ibb.co/F41Z8Dp/Screenshot-2022-02-13-191807.png" alt="juice" border="0"></li>
+                        <li>45% off</li>
+                    </ul>
+                </span>
+                <span class="box" onclick="ch()">
+                    <ul>
+                        <li><img src="https://i.ibb.co/JrJ5mKx/Screenshot-2022-02-13-191715.png" alt="coca" border="0"></li>
+                        <li>50% off</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- SHOW ALL OFFERS PRODUCTS  -->
     <div class="container">
         <h3 class="heading">All Offers</h3>
         <div class="offer-box" id="offer-box">
@@ -270,6 +389,34 @@
             a.appendChild(pro);
         }
     }
+    /*---SLIDER---*/
+    function ch() {
+        alert($(".slide-box").scrollLeft());
+    }
+    var cscroll = 0;
+    var goto = 220;
+    var lscroll = 400;
+    if ($(window).width() < 600) {
+        goto=150;
+        lscroll = 900;
+    }
+    setInterval(() => {
+        if ($(".slide-box").scrollLeft() == cscroll) {
+            $(".slide-box").animate({
+                scrollLeft: goto + "px"
+            }, 1000)
+            cscroll = goto;
+            goto = goto + 230;
+        }
+        if ($(".slide-box").scrollLeft() > lscroll) {
+            // i = 0;
+            cscroll = 0;
+            goto = 0;
+            $(".slide-box").animate({
+                scrollLeft: goto + "px"
+            }, 1000)
+        }
+    }, 2000);
 </script>
 
 </html>
