@@ -42,7 +42,7 @@
     transform: translateY(-1rem);
 }
 .category .card h2{
-    position: relative;
+    position: absolute;
     bottom: 0rem;
 }
 .category .card:nth-child(1){
